@@ -17,11 +17,11 @@ document.getElementById("findButton").onclick = function() {
 
         for (let o=0; o<output.length; o++) {
         var span = document.createElement("div");
-        var textContent = document.createTextNode(output[o]);
+        span.id = "anaOut"
+        var textContent = document.createTextNode(o + "." + " "+ output[o]);
         span.appendChild(textContent);
         document.getElementById("wordsDiv").appendChild(span);
         }
-        
     }
     
     
